@@ -1,0 +1,73 @@
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <h1>Drawing with mouse events</h1>
+    
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.css') }}">
+
+  </head>
+  <body>
+
+    <div class=div1>
+    <canvas id="myPics" width="196px" height="196px"></canvas>
+    </div>
+
+    <div class=div2>
+    <button type="button" class="btn btn-danger" onclick="window.location.reload()" id='button-reset'>RESET</button>
+
+    <button type="button" class="btn btn-success" onclick="send()" id='button-ia'>IA CLASSIFICATION</button>
+
+    </div>
+
+    <div class=div3><h2 id='predict'></h2></div>
+    
+    <!-- Attaching a JS file -->
+    <script src="{{url_for('static',filename = 'app.js')}}"></script>
+    
+    <script src="{{url_for('static',filename = 'jquery.js')}}"></script>
+
+    
+   
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
