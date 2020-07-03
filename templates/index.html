@@ -1,22 +1,24 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vendor Catalogue</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <h1>Drawing with mouse events</h1>
+    <h1 class="center">Draw a number</h1>
     
     
     <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='materialize.css') }}">
 
   </head>
   <body>
 
+    <div class = "container center">
     <div class=div1>
     <canvas id="myPics" width="196px" height="196px"></canvas>
     </div>
 
+   
     <div class=div2>
     <button type="button" class="btn btn-danger" onclick="window.location.reload()" id='button-reset'>RESET</button>
 
@@ -31,7 +33,7 @@
     
     <script src="{{url_for('static',filename = 'jquery.js')}}"></script>
 
-    
+      </div>
    
     </body>
 </html>

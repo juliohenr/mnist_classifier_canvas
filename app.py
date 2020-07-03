@@ -5,7 +5,6 @@ import re
 #import cStringIO
 from io import StringIO 
 from flask import Flask
-from flask_mysqldb import MySQL
 import os
 from flask import render_template, request,redirect, session, flash, url_for, send_from_directory
 import re
@@ -64,7 +63,7 @@ def upload_base64_file():
 
     resized =resized/255
 
-    predicted = np.argmax(loaded_model.predict(np.array([resized])))
+    predicted = np.argmax(loaded_model.predict(np.array([resized.reshape(28,28,1)])))
 
     return jsonify({'predict':int(predicted)})
 

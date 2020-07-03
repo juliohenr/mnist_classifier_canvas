@@ -1,4 +1,4 @@
-canvas {
+#myPics {
     border: 1px solid black;
     width: 196px;
     height: 196px;
@@ -12,21 +12,22 @@ canvas {
   box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/*
 .div1 {
   width: 300px;
   height: 196px;
-
   margin-left: 10px;
 
  
-}
-
+}*/
+/*
 .div2 {
   width: 300px;
   height: 10px;
   padding: 5px;
 
 }
+
 
 .div3 {
 
@@ -36,4 +37,4 @@ canvas {
 
   margin-top: 20px;
 
-}
+}*/
