@@ -7,7 +7,6 @@ from io import StringIO
 from flask import Flask
 import os
 from flask import render_template, request,redirect, session, flash, url_for, send_from_directory
-import re
 from flask_cors import CORS
 #request.form['categoria']
 from flask import jsonify

@@ -1,0 +1,5 @@
+Python 3.7.4
+Flask 1.1.1      
+Flask-Cors 3.0.8 
+tensorflow 2.1.0 
+
